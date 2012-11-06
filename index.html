@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/sudoku.css" />
+    <script type="text/javascript" src="sudoku.js"></script>
+    <script type="text/javascript" src="tester.js"></script>
+</head>
+<body>
+    <div id="sudoku"></div>
+    <div id="log"></div>
+    <script type="text/javascript">
+        var map = buildMap();
+        buildGrid("sudoku", map);
+    </script>
+</body>
+</html>
