@@ -1,0 +1,96 @@
+#sudoku {
+    float: left;
+    font-family: arial;
+    font-size: 12px;
+    margin: 10px;
+}
+.gridBox {
+    float: left;
+    position: relative;
+    margin: 0 3px 3px 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: #161616;
+}
+.gridBox .available {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+}
+.gridBox .available span {
+    text-align: center;
+    color: lightblue;
+    display: block;
+    font-size: 10px;
+    padding: 3px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 0 3px lightblue;
+}
+.available span:nth-child(2),
+.available span:nth-child(5),
+.available span:nth-child(8) {
+    left: 16px;
+}
+.available span:nth-child(3),
+.available span:nth-child(6),
+.available span:nth-child(9) {
+    left: 33px;
+}
+.available span:nth-child(4),
+.available span:nth-child(5),
+.available span:nth-child(6) {
+    top: 16px;
+}
+.available span:nth-child(7),
+.available span:nth-child(8),
+.available span:nth-child(9) {
+    top: 33px;
+}
+.gridBox:nth-child(10),
+.gridBox:nth-child(19),
+.gridBox:nth-child(28),
+.gridBox:nth-child(37),
+.gridBox:nth-child(46),
+.gridBox:nth-child(55),
+.gridBox:nth-child(64),
+.gridBox:nth-child(73),
+.gridBox:nth-child(10),
+.gridBox:nth-child(10),
+.gridBox:nth-child(10),
+.gridBox:nth-child(10) {
+    clear: left;
+}
+.gridBox input { 
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    background-color: transparent;
+    position: relative;
+    z-index: 9;
+    width: 35px;
+    border: 0px;
+    display: block;
+    font-family: arial;
+    margin: 1px auto 0;
+    cursor: pointer;
+}
+.hide { display: none; }
+.highlight { background-color: #000; }
+.red { color: #ff3333 !important; }
+#log {
+    padding: 20px;
+    float: left;
+    font-family: "lucida console";
+    font-size: 10px;
+    width: 55%;
+    overflow: visible;
+    color: lightgreen;
+    line-height: 14px
+}
